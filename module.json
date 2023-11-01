@@ -56,8 +56,8 @@
   "readme": "https://github.com/professorx00/ezd6-pts/blob/main/README.md",
   "bugs": "https://github.com/professorx00/ezd6-pts/issues",
   "changelog": "https://github.com/professorx00/ezd6-pts/releases",
-  "manifest": "",
-  "download": "",
+  "manifest": "https://github.com/professorx00/ezd6-pts/releases/download/1.0.1/module.json",
+  "download": "https://github.com/professorx00/ezd6-pts/releases/download/1.0.1/ezd6-pts.zip",
   "protected": false,
   "coreTranslation": false,
   "library": false
