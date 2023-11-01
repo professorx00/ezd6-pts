@@ -22,6 +22,16 @@
       "paths": ["lang"]
     }
   },
+  "packs": [
+    {
+      "name": "Trauma Reactions",
+      "label": "Trauma Reactions",
+      "type": "RollTable",
+      "path": "packs/pts.db",
+      "entity": "RollTable",
+      "module": "ezd6-pts"
+    }
+  ],
   "languages": [
     {
       "lang": "en",
