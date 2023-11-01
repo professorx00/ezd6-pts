@@ -1,6 +1,7 @@
 import { EZD6 } from "../util/config";
+import { MiniCharSheet } from "../../../../systems/ezd6/module/sheets/minicharsheet.js";
 
-export class MiniCharSheet extends FormApplication {
+export class PTSMiniCharSheet extends MiniCharSheet {
    constructor(object, options) {
       super(object, options);
       this.actor = object || {};
@@ -70,7 +71,7 @@ export class MiniCharSheet extends FormApplication {
    renderHeroDice() {
       let html = "";
 
-      if (this.actor.system.herodice === 0) {
+      if (this.actor.system.herodice === 0 || this.actor.system.herodice < 0) {
          html += '<i class="fas fa-square no-hero-die"></i>';
       } else {
          for (let i = 0; i < this.actor.system.herodice; i++) {
@@ -95,20 +96,8 @@ export class MiniCharSheet extends FormApplication {
 
    activateListeners(html) {
       super.activateListeners(html);
-
-      html.find(".open-sheet").click(this._onOpenSheetClick.bind(this));
-      html.find(".strikes").click(this._onRemoveStrike.bind(this));
-      html.find(".strikes").contextmenu(this._onAddStrike.bind(this));
       html.find(".mental").click(this._onRemoveMental.bind(this));
       html.find(".mental").contextmenu(this._onAddMental.bind(this));
-      html.find(".roll").click(this._onRoll.bind(this));
-      html.find(".hero-dice").click(this._onRollHeroDie.bind(this));
-      html.find(".hero-dice").contextmenu(this._onAddHeroDie.bind(this));
-      html.find(".karma-spend").click(this._onSpendKarma.bind(this));
-      html.find(".karma-spend").contextmenu(this._onAddKarma.bind(this));
-      html.find(".cast-spell").click(this._onCast.bind(this, { rolltype: "spell" }));
-      html.find(".roll-miracle").click(this._onCast.bind(this, { rolltype: "miracle" }));
-      html.find(".roll-magic-resist").click(this._onRollResist.bind(this));
    }
 
    _onOpenSheetClick(event) {

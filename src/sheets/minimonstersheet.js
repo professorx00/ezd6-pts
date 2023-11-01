@@ -1,6 +1,6 @@
 import { EZD6 } from "../util/config";
 
-export class MiniMonsterSheet extends FormApplication {
+export class PTSMiniMonsterSheet extends FormApplication {
    constructor(object, options) {
       super(object, options);
       this.actor = object || {};

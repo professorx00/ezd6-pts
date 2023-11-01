@@ -1,7 +1,7 @@
 import { EZD6 } from "./config.js";
 import EZItem from "./ezitem.js";
-import { MiniCharSheet } from "../sheets/minicharsheet.js";
-import { MiniMonsterSheet } from "../sheets/minimonstersheet.js";
+import { PTSMiniCharSheet } from "../sheets/minicharsheet.js";
+import { PTSMiniMonsterSheet } from "../sheets/minimonstersheet.js";
 
 export default class PTSCharacterSheet extends ActorSheet {
    static get defaultOptions() {
@@ -372,9 +372,9 @@ export default class PTSCharacterSheet extends ActorSheet {
 
    async showMini() {
       if (this.actor.type === "monster") {
-         new MiniMonsterSheet(this.actor).render(true);
+         new PTSMiniMonsterSheet(this.actor).render(true);
       } else {
-         new MiniCharSheet(this.actor).render(true);
+         new PTSMiniCharSheet(this.actor).render(true);
       }
    }
 }

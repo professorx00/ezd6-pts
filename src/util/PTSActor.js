@@ -1,5 +1,5 @@
-import { MiniCharSheet } from "../sheets/minicharsheet.js";
-import { MiniMonsterSheet } from "../sheets/minimonstersheet.js";
+import { PTSMiniCharSheet } from "../sheets/minicharsheet.js";
+import { PTSMiniMonsterSheet } from "../sheets/minimonstersheet.js";
 import { EZD6 } from "./config.js";
 import { simpleGMWhisper } from "../util/utility.js";
 
@@ -257,6 +257,9 @@ export default class PSTActor extends Actor {
          ui.notifications.warn(game.i18n.localize("MESSAGES.NoHeroDice"));
       } else if (this.system.herodice === 0) {
          ui.notifications.info(game.i18n.localize("MESSAGES.NoHeroDice"));
+      } else if (this.system.herodice < 0) {
+         ui.notifications.info(game.i18n.localize("MESSAGES.NoHeroDice"));
+         this.updateSource({ "system.herodice": 0 });
       } else {
          const title = `${this.name} ${game.i18n.localize("EZD6.RollsAHeroDie")}!`;
          const diceRoll = await new Roll("1d6").evaluate({ async: true });
@@ -474,9 +477,9 @@ export default class PSTActor extends Actor {
 
    async showMini() {
       if (this.type === "monster") {
-         new MiniMonsterSheet(this).render(true);
+         new PTSMiniMonsterSheet(this).render(true);
       } else {
-         new MiniCharSheet(this).render(true);
+         new PTSMiniCharSheet(this).render(true);
       }
    }
 }
