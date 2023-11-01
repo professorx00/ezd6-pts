@@ -1,25 +1,21 @@
 {
-  "id": "template-svelte-esm",
-  "title": "Template Svelte (ESM)",
-  "description": "Provides a bare-bones Foundry module template repo to get set up with using the TyphonJS Runtime Library and Svelte with ES Modules.",
-  "version": "0.0.0",
+  "id": "ezd6-pts",
+  "title": "EZD6 PTS",
+  "description": "Basic PTS system for EZD6",
+  "version": "0.0.1",
   "authors": [
     {
-      "name": "Michael Leahy (TyphonJS) - MLeahy#4299",
-      "url": "https://www.typhonjs.io",
-      "discord": "MLeahy#4299"
+      "name": "David Ward",
+      "url": "https://www.grimwood.games",
+      "discord": "grimwood_games"
     }
   ],
   "compatibility": {
     "minimum": "10",
     "verified": "11"
   },
-  "esmodules": [
-    "index.js"
-  ],
-  "styles": [
-    "style.css"
-  ],
+  "esmodules": ["index.js"],
+  "styles": ["style.css"],
   "flags": {
     "hotReload": {
       "extensions": ["json"],

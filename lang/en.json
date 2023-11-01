@@ -1,5 +1,6 @@
 {
-  "TemplateESM": {
-    "title": "Template Svelte (ESM)"
+  "PTS": {
+    "MentalSave": "Mental Save",
+    "mental": "Mental"
   }
 }
