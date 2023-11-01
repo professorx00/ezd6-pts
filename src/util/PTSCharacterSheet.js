@@ -10,7 +10,11 @@ export default class PTSCharacterSheet extends ActorSheet {
       });
    }
    get template() {
-      return "modules/ezd6-pts/templates/PTSCharacterSheet.hbs";
+      if (this.actor.type === "monster") {
+         return `modules/ezd6-pts/templates/PTSmonster-sheet.hbs`;
+      } else {
+         return "modules/ezd6-pts/templates/PTSCharacterSheet.hbs";
+      }
    }
    getData(options) {
       const sheetData = super.getData(options);

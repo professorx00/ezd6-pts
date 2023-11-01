@@ -8,7 +8,7 @@ export class MiniMonsterSheet extends FormApplication {
 
    static get defaultOptions() {
       return mergeObject(super.defaultOptions, {
-         template: "systems/ezd6/templates/formapplications/minimonster.hbs",
+         template: "modules/ezd6-pts/templates/formapplications/minimonster.hbs",
          closeOnSubmit: false,
          width: "290",
          height: "auto",

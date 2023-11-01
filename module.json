@@ -39,6 +39,18 @@
       "path": "lang/en.json"
     }
   ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "ezd6",
+        "type": "system",
+        "manifest": "https://github.com/drl2/ezd6-fvtt/releases/download/1.1.2/system.jsonn",
+        "compatibility": {
+          "verified": "1.1.2"
+        }
+      }
+    ]
+  },
   "socket": false,
   "url": "https://github.com/professorx00/ezd6-pts",
   "readme": "https://github.com/professorx00/ezd6-pts/blob/main/README.md",

@@ -20,14 +20,6 @@ export default class PSTActor extends Actor {
          }
       }
 
-      if (game.settings.get("ezd6", "showMentalSave")) {
-         this.updateSource({
-            system: {
-               showMentalSave: true,
-            },
-         });
-      }
-
       // set some token defaults for player characters
       if (this.type === "character") {
          this.updateSource({
