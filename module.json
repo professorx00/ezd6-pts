@@ -2,7 +2,7 @@
   "id": "ezd6-pts",
   "title": "EZD6 Psychological Trauma System",
   "description": "Basic Psychological Trauma System for EZD6",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "authors": [
     {
       "name": "David Ward",
@@ -56,8 +56,8 @@
   "readme": "https://github.com/professorx00/ezd6-pts/blob/main/README.md",
   "bugs": "https://github.com/professorx00/ezd6-pts/issues",
   "changelog": "https://github.com/professorx00/ezd6-pts/releases",
-  "manifest": "https://github.com/professorx00/ezd6-pts/releases/download/1.0.1/module.json",
-  "download": "https://github.com/professorx00/ezd6-pts/releases/download/1.0.1/ezd6-pts.zip",
+  "manifest": "https://github.com/professorx00/ezd6-pts/releases/download/1.0.2/module.json",
+  "download": "https://github.com/professorx00/ezd6-pts/releases/download/1.0.2/ezd6-pts.zip",
   "protected": false,
   "coreTranslation": false,
   "library": false
